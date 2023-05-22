@@ -1,13 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Small screen mobile query */
+@media screen and (min-width: 375px) {
+  .container {
+    margin: 5px auto;
+    max-width: 355px;
+  }
+
+  .container h2 {
+    padding: 15px 5px;
+    margin: 20px auto 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  .img_container {
+    display: grid;
+    gap: 10px;
+  }
+
+  form {
+    margin: 0 auto 10px;
+    width: 95%;
+  }
+
+  form input {
+    padding: 8px 4em;
+    margin-right: 0.5em;
+    border: 1px solid dodgerblue;
+    border-radius: 0.3em;
+  }
+
+  form button {
+    padding: 8px 1.5em;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+
+  footer p {
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+  }
+
+  footer a {
+    color: white;
+  }
+}
+
+/* Big screen mobile query */
+@media screen and (min-width: 425px) {
+  .container {
+    margin: 5px auto;
+    max-width: 405px;
+  }
+
+  .container h2 {
+    padding: 15px 5px;
+    margin: 20px 0 30px;
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  .img_container {
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+  }
+
+  form {
+    margin: 0 auto 10px;
+    width: 90%;
+  }
+
+  form input {
+    padding: 8px 5em;
+    margin-right: 0.5em;
+    border: 1px solid dodgerblue;
+    border-radius: 0.3em;
+  }
+
+  form button {
+    padding: 8px 1.5em;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+  }
+}
+
+/* Big screen tablet or ipads query */
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 10px auto;
+    max-width: 750px;
+  }
+
+  .container h2 {
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    margin: 5px auto 10px;
+    width: max-content;
+    padding: 10px 20px;
+  }
+
+  .img_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: minmax(auto, auto);
+    gap: 10px;
+  }
+
+  form {
+    margin: 0 auto 10px;
+    width: 80%;
+  }
+
+  form input {
+    padding: 8px 12em;
+    margin-right: 1em;
+    border: 1px solid dodgerblue;
+    border-radius: 0.3em;
+  }
+
+  form button {
+    padding: 8px 1.5em;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+  }
+}
+
+/* Big screen laptop query */
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: 10px auto;
+    max-width: 1000px;
+  }
+
+  .container h2 {
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    margin: 30px auto 30px;
+    width: max-content;
+    padding: 10px 20px;
+  }
+
+  .img_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: minmax(auto, auto);
+    gap: 10px;
+  }
+
+  form {
+    margin: 0 auto 10px;
+    width: 80%;
+  }
+
+  form input {
+    padding: 8px 20em;
+    margin-right: 1.5em;
+    border: 1px solid dodgerblue;
+    border-radius: 0.3em;
+  }
+
+  form button {
+    padding: 8px 1.5em;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+  }
 }
